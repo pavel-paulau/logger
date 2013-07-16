@@ -9,7 +9,7 @@ logging.getLogger('requests').setLevel(logging.WARNING)
 
 config_file = os.path.join(os.path.dirname(__file__), 'logging.conf')
 
-logging.config.fileConfig(config_file)
+logging.config.fileConfig(config_file, disable_existing_loggers=False)
 logger = logging.getLogger()
 
 
