@@ -18,3 +18,5 @@ def error(self, msg, *args, **kwargs):
     sys.exit(1)
 
 logger.interrupt = types.MethodType(error, logger)
+logger.info = logger.info
+logger.warn = logger.warn
